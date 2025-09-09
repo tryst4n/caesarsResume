@@ -1,9 +1,29 @@
-#welcome {
+#welcome {}
 
+main {}
+
+header {
+    height: 8vh;
+    margin: 1rem;
+    border-radius: 8px;
 }
 
-main {
+header .row {
+    height: 100%;
+    margin: 1rem;
+}
+
+header .row .col {
+    background-color: rgba(211, 211, 211, 0.34);
+    height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+}
+
+header .row .col:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
