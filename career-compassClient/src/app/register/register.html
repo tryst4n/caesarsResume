@@ -1,1 +1,49 @@
-<p>register works!</p>
+<header class="container">
+    <div class="row align-items-center d-flex flex-nowrap">
+        <div class="col mx-2" [routerLink]="['/home']">
+            Home
+        </div>
+        <div class="col-8 mx-2">
+
+        </div>
+        <div class="col mx-2" [routerLink]="['/about']">
+            About
+        </div>
+        <div class="col mx-2" [routerLink]="['/login']">
+            Login
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <div class="row justify-content-center align-items-center min-vh-92">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card p-4 shadow-sm">
+                <h2 class="text-center mb-4">Career Compass</h2>
+                <form>
+                    <div class="mb-3">
+                        <input type="text" name="registerUsername" id="registerUsername" class="form-control"
+                            placeholder="Username" [(ngModel)]="registerUsername">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" name="registerEmail" id="registerEmail" class="form-control"
+                            placeholder="Email address" [(ngModel)]="registerEmail">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" name="registerPassword" id="registerPassword" class="form-control"
+                            placeholder="Password" [(ngModel)]="registerPassword">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" name="registerPasswordConfirm" id="registerPasswordConfirm"
+                            class="form-control" placeholder="Confirm password" [(ngModel)]="registerPasswordConfirm">
+                    </div>
+                    <button (click)="register()" class="btn btn-primary w-100">Register</button>
+                    <div class="text-center mt-3">
+                        Already have an account?
+                        <a [routerLink]="['/login']" class="text-primary text-decoration-underline">Login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
