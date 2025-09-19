@@ -1,8 +1,11 @@
+using System.Text;
 using CareerCompass.Data;
 using CareerCompass.Models;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<CareerCompassContext>(options =>
@@ -11,8 +14,29 @@ builder.Services.AddDbContext<CareerCompassContext>(options =>
     options.UseLazyLoadingProxies();
 });
 
-builder.Services.AddIdentity<User, IdentityRole>().AddEntityFrameworkStores<CareerCompassContext>(); // Et ceci
+builder.Services.AddIdentity<User, IdentityRole>().AddEntityFrameworkStores<CareerCompassContext>();
 // Add services to the container.
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(options =>
+{
+
+    options.SaveToken = true; 
+    options.RequireHttpsMetadata = false; 
+    options.TokenValidationParameters = new TokenValidationParameters()
+    {
+        ValidateAudience = true,
+        ValidateIssuer = true,
+        ValidAudience = "http://localhost:4200",
+        ValidIssuer = "https://localhost:6969",
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8
+            .GetBytes("LooOOongue Phrase SiNoN Ça ne Marchera PaAaAAAaAas !")) 
+    };
+});
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

@@ -5,12 +5,12 @@ import { FormsModule } from '@angular/forms';
 import { Router, RouterModule, RouterOutlet } from '@angular/router';
 import { lastValueFrom } from 'rxjs';
 
-const domain = "https://localhost:7216/";
+const domain = "http://localhost:5063/";
 
 @Component({
   selector: 'app-register',
   standalone: true,
-  imports: [RouterOutlet, RouterModule, CommonModule, FormsModule, HttpClientModule],
+  imports: [RouterModule, CommonModule, FormsModule, HttpClientModule],
   templateUrl: './register.html',
   styleUrl: './register.css'
 })
@@ -20,7 +20,7 @@ export class Register {
   registerPassword: string = "";
   registerPasswordConfirm: string = "";
 
-  constructor(public http: HttpClient) { }
+  constructor(public http: HttpClient, public router : Router) { }
 
   async register(): Promise<void> {
 
@@ -32,6 +32,19 @@ export class Register {
     };
 
     let x = await lastValueFrom(this.http.post<any>(domain + "api/Users/Register", registerDTO));
+    this.login(this.registerUsername, this.registerPassword)
+    this.router.navigate(["/cvmanager"]);
+    console.log(x);
+  }
+
+  async login(username : string, password : string) : Promise<void>{
+
+    let loginDTO = {
+      username : username,
+      password : password
+    };
+
+    let x = await lastValueFrom(this.http.post<any>(domain + "api/Users/Login", loginDTO));
     console.log(x);
   }
 }
