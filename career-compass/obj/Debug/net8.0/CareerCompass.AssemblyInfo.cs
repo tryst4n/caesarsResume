@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CareerCompass")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95f2f19ea7fd66ab263ba9cc0ca03815e9d8f72d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0ad4593cf1a48ba403e2c27a81a20fa12a0b198b")]
 [assembly: System.Reflection.AssemblyProductAttribute("CareerCompass")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CareerCompass")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,7 +1,5 @@
 header {
     height: 8vh;
-    margin: 1rem;
-    border-radius: 8px;
 }
 
 header .row {
@@ -15,11 +13,17 @@ header .row .col {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 18px;
 }
 
 header .row .col:hover {
     transform: scale(1.10);
     transition: transform 0.8s ease;
     cursor: pointer;
+}
+
+main .row {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

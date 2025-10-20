@@ -1,4 +1,6 @@
-﻿namespace CareerCompass.Models
+﻿using System.Text.Json.Serialization;
+
+namespace CareerCompass.Models
 {
     public class CV
     {
@@ -10,22 +12,20 @@
         // Store raw text
         public string Content { get; set; } = string.Empty;
 
-        // Date of upload
-        public DateTime UploadedAt { get; set; } = DateTime.UtcNow;
-
-        public CV(int id, string title, string content, DateTime uploadedAt, string userId)
+        public CV(int id, string title, string content, string userId)
         {
             Id = id;
             Title = title;
             Content = content;
-            UploadedAt = uploadedAt;
             UserId = userId;
         }
 
         public CV() { }
 
         // Foreign key → link to User
-        public string UserId { get; set; } = string.Empty;
+        public string UserId { get; set; }
+
+        [JsonIgnore]
         public virtual User User { get; set; } = null!;
     }
 }

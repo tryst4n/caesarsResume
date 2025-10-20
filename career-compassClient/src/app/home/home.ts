@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterModule, RouterOutlet } from '@angular/router';
+import { Router, RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -8,5 +8,20 @@ import { RouterModule, RouterOutlet } from '@angular/router';
   styleUrl: './home.css'
 })
 export class Home {
+  constructor(public router: Router) { }
+  isLogged() {
+    if (sessionStorage.getItem("token") != null) {
+      return true;
+    }
+    return false
+  }
 
+  getUsername() {
+    return sessionStorage.getItem("username");
+  }
+
+  async logout() {
+    sessionStorage.clear();
+    this.router.navigate(["/login"]);
+  }
 }
