@@ -16,7 +16,7 @@ header .row .col {
 }
 
 header .row .col:hover {
-    transform: scale(1.10);
+    transform: scale(1.05);
     transition: transform 0.8s ease;
     cursor: pointer;
 }

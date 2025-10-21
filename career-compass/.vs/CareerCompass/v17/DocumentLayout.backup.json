@@ -35,10 +35,6 @@
       "RelativeMoniker": "D:0:0:{991C4844-C711-4B15-9E17-EA5DE24751C0}|CareerCompass.csproj|solutionrelative:controllers\\cvscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\2161845\\Documents\\GitHub\\career-compass\\career-compass\\Migrations\\20251020201333_users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20251020201333_users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{991C4844-C711-4B15-9E17-EA5DE24751C0}|CareerCompass.csproj|c:\\users\\2161845\\documents\\github\\career-compass\\career-compass\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{991C4844-C711-4B15-9E17-EA5DE24751C0}|CareerCompass.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -49,6 +45,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{991C4844-C711-4B15-9E17-EA5DE24751C0}|CareerCompass.csproj|c:\\users\\2161845\\documents\\github\\career-compass\\career-compass\\careercompass.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{991C4844-C711-4B15-9E17-EA5DE24751C0}|CareerCompass.csproj|solutionrelative:careercompass.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{991C4844-C711-4B15-9E17-EA5DE24751C0}|CareerCompass.csproj|c:\\users\\2161845\\documents\\github\\career-compass\\career-compass\\migrations\\20251020201333_users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{991C4844-C711-4B15-9E17-EA5DE24751C0}|CareerCompass.csproj|solutionrelative:migrations\\20251020201333_users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,7 +62,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "20251020201333_users.cs",
               "DocumentMoniker": "C:\\Users\\2161845\\Documents\\GitHub\\career-compass\\career-compass\\Migrations\\20251020201333_users.cs",
               "RelativeDocumentMoniker": "Migrations\\20251020201333_users.cs",
@@ -70,8 +70,7 @@
               "RelativeToolTip": "Migrations\\20251020201333_users.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T20:13:33.285Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T20:13:33.285Z"
             },
             {
               "$type": "Document",
@@ -83,8 +82,7 @@
               "RelativeToolTip": "DTOs\\RegisterDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T20:07:20.974Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T20:07:20.974Z"
             },
             {
               "$type": "Document",
@@ -96,8 +94,7 @@
               "RelativeToolTip": "DTOs\\LoginDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T20:07:12.722Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T20:07:12.722Z"
             },
             {
               "$type": "Document",
@@ -107,14 +104,14 @@
               "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
               "ToolTip": "C:\\Users\\2161845\\Documents\\GitHub\\career-compass\\career-compass\\Controllers\\UsersController.cs",
               "RelativeToolTip": "Controllers\\UsersController.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAuwDwAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAUwDgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-20T20:06:22.425Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "WebApplication1.http",
               "DocumentMoniker": "C:\\Users\\2161845\\Documents\\GitHub\\career-compass\\career-compass\\WebApplication1.http",
               "RelativeDocumentMoniker": "WebApplication1.http",
@@ -134,8 +131,7 @@
               "RelativeToolTip": "Controllers\\CVsController.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T22:07:42.235Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T22:07:42.235Z"
             },
             {
               "$type": "Document",
@@ -147,12 +143,11 @@
               "RelativeToolTip": "Data\\CareerCompassContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T22:08:59.793Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T22:08:59.793Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\2161845\\Documents\\GitHub\\career-compass\\career-compass\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -172,8 +167,7 @@
               "RelativeToolTip": "Models\\CV.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAgwBgAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T21:57:02.618Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T21:57:02.618Z"
             },
             {
               "$type": "Document",
@@ -185,8 +179,7 @@
               "RelativeToolTip": "Models\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T21:50:14.968Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T21:50:14.968Z"
             },
             {
               "$type": "Document",
@@ -198,12 +191,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T21:34:29.73Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-25T21:34:29.73Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "CareerCompass.csproj",
               "DocumentMoniker": "C:\\Users\\2161845\\Documents\\GitHub\\career-compass\\career-compass\\CareerCompass.csproj",
               "RelativeDocumentMoniker": "CareerCompass.csproj",

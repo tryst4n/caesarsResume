@@ -10,7 +10,7 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace WebApi.Controllers
 {
-    [Route("api/[controller]/[action]")] // Utilisez cette règle de routage globale !
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class UsersController : ControllerBase
     {
