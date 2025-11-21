@@ -1,2 +1,3 @@
-# career-compass
-Full-stack web app that compares CVs to job postings, highlights missing skills, and suggests tailored improvements. Backend in ASP.NET Core Web API, frontend in TypeScript with AI integration.
+✨Full-Stack Resume optimizer Web App
+
+This project is a full-stack web application that compares CVs with jobs and interships postings, identifies missing or weak skills, and provides AI-powered suggestions for improvement. The backend is built with ASP.NET Core Web API, following a REST API architecture and documented using Swagger (OpenAPI). The frontend is developed with Angular, built on Node.js and using npm as its package manager.
