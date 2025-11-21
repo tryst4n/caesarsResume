@@ -24,4 +24,8 @@ export class Home {
     sessionStorage.clear();
     this.router.navigate(["/login"]);
   }
+
+  async analyzeResume(){
+    
+  }
 }

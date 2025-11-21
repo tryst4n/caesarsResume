@@ -17,8 +17,8 @@
         </div>
         }
         @if(!isLogged()){
-        <div class="col mx-2" [routerLink]="['/register']">
-            Register
+        <div class="col mx-2" [routerLink]="['/login']">
+            Login
         </div>
         }
     </div>
@@ -49,10 +49,14 @@
 }
 
 <main class="container">
-    <div class="row" style="background-color: gray;">
-        <div class="col-12 col-md-10 col-lg-8">
+    <div class="row" style="background-color: rgb(66, 66, 255);">
+        <div class="col">
             <label for="resume">Input your resume</label><br>
-            <textarea name="resume" id="resume" style="resize: none; min-height: 200px;"></textarea>
+            <textarea name="resume" id="resume" style="resize: none; min-height: 500px; min-width: 800px;"></textarea>
+        </div>
+         <div class="col">
+            <label for="jobInterests">Job interests</label><br>
+            <input name="jobInterests" type="Job interests">
         </div>
     </div>
 </main>
